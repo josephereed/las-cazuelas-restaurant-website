@@ -8,7 +8,7 @@ const customMedia = generateMedia({
 
 const Header = () => {
   return (
-    <Box className="header-fixed-top" style={{position: 'fixed', fontFamily: "fabriga"}}>
+    <Box className="header-fixed-top" style={{position: "relative", textAlign: "center"}}>
       Las Cazuelas Restaurant in Historic Alameda · 55 Race St, San Jose, CA, 95126 (408) 293-0115
     </Box>
   )
