@@ -30,11 +30,15 @@
   text-align: center;
 }
 
+button a {
+  color: white !important;
+}
+
 .content-header {
   text-transform: uppercase;
-  font-family: 'Trebuchet MS';
   color: #b63456;
   margin: 10%;
+  font-weight: 360;
 }
 
 .header-fixed-top {
@@ -72,6 +76,11 @@
   position: sticky;
   top: 0px;
   z-index: 1;
+}
+
+.nav-linker {
+  font-weight: 450;
+  color:rgba(100,50,10,.8) !important;
 }
 
 .nav-link {
