@@ -4,7 +4,7 @@ import GrubHub from '../images/GrubHub.png'
 
 const Footer = () => {
   return (
-    <div className="footer-fixed-bottom" style={{textAlign: 'left', paddingLeft: "10%"}}>
+    <div className="footer-fixed-bottom" style={{textAlign: 'left', paddingLeft: "10%", paddingTop: '0.5%'}}>
       <a className="icon" href="https://www.facebook.com/lascazuelasrestaurant/" style={{color: '#f5f7cb'}}>
         <i className="fa fa-facebook-square" style={{fontSize:"24px", marginRight: "1rem"}}></i>
       </a>
