@@ -36,28 +36,29 @@ const Navbar = () => {
             src={logo}
             height="60px"
             style={{ padding: '0', margin: '0%' }}
+            alt="logo"
           />
         </Link>
         <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
           <li className="nav-item mr-4">
-            <a className="nav-link nav-linker" href="#">
+            <Link className="nav-link nav-linker" to="/hours">
               Hours & Location
-            </a>
+            </Link>
           </li>
           <li className="nav-item mr-4">
-            <a className="nav-link nav-linker" href="/about">
+            <Link className="nav-link nav-linker" to="/about">
               About
-            </a>
+            </Link>
           </li>
           <li className="nav-item mr-4">
-            <a className="nav-link nav-linker" href="#">
+            <Link className="nav-link nav-linker" to="/menu">
               Menu
-            </a>
+            </Link>
           </li>
           <li className="nav-item mr-4">
-            <a className="nav-link nav-linker" href="#">
+            <Link className="nav-link nav-linker" to="/catering">
               Catering
-            </a>
+            </Link>
           </li>
           &nbsp;&nbsp;
           <li className="nav-item">
@@ -71,13 +72,13 @@ const Navbar = () => {
                 padding: '0',
               }}
             >
-              <a
+              <Link
                 className="nav-link"
-                href="#"
+                to="/order"
                 style={{ fontWeight: '450px' }}
               >
                 Order Online
-              </a>
+              </Link>
             </button>
           </li>
         </ul>

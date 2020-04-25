@@ -1,11 +1,11 @@
 :root {
-  --main-beige: "#f9fae8";
+  --main-beige: '#f9fae8';
   height: 100%;
   margin: 0;
 }
 
 .footer-fixed-bottom img {
-  padding-bottom: .25rem;
+  padding-bottom: 0.25rem;
   margin-right: 1rem;
   height: 28px;
 }
@@ -14,11 +14,12 @@
 }
 
 .footer-fixed-bottom i:hover {
-  transform: scale(1.2)
+  transform: scale(1.2);
 }
 
-
-#root, body, .App {
+#root,
+body,
+.App {
   height: 100%;
   margin: 0;
 }
@@ -30,8 +31,26 @@
   text-align: center;
 }
 
+.react-pdf__Page__canvas {
+  justify-content: center;
+  display: inline-block !important;
+}
+
 button a {
   color: white !important;
+}
+
+#test > div > div > div > canvas {
+  display: 'inline';
+}
+
+.center {
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
 }
 
 .content-header {
@@ -42,18 +61,17 @@ button a {
 }
 
 .header-fixed-top {
-  font-size: .8rem;
+  font-size: 0.8rem;
   background: #b63456;
   color: white;
   margin: 0;
-  max-height: "10px";
-  min-height: "0px";
+  max-height: '10px';
+  min-height: '0px';
   width: 100vw;
   z-index: 5;
   position: 'static';
-  padding: .5%;
+  padding: 0.5%;
 }
-
 
 .footer-fixed-bottom {
   background: #245c31;
@@ -62,15 +80,15 @@ button a {
   bottom: 0;
   width: 100%;
   color: white;
-  padding: .5rem;
+  padding: 0.5rem;
   max-height: 40px;
   border-top: 4px solid #b63456;
 }
 .navigation {
-  border-bottom: 0px solid #989EA4;
-  border-top: 0px solid #717D85;
+  border-bottom: 0px solid #989ea4;
+  border-top: 0px solid #717d85;
   padding: 0;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   padding-left: 2rem;
   position: -webkit-sticky;
   position: sticky;
@@ -80,7 +98,7 @@ button a {
 
 .nav-linker {
   font-weight: 450;
-  color:rgba(100,50,10,.8) !important;
+  color: rgba(100, 50, 10, 0.8) !important;
 }
 
 .nav-link {
@@ -92,13 +110,13 @@ p {
 }
 
 @font-face {
-  font-family: "rosheila";
-  src: url('../src/fonts/Rosheila.ttf')
+  font-family: 'rosheila';
+  src: url('../src/fonts/Rosheila.ttf');
 }
 
 @font-face {
-  font-family: "fabriga";
-  src: url('../src/fonts/Fabriga-Light.eot')
+  font-family: 'fabriga';
+  src: url('../src/fonts/Fabriga-Light.eot');
 }
 
 #test {
@@ -119,33 +137,36 @@ p {
 
 @keyframes fadein {
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
-@-moz-keyframes fadein { /* Firefox */
+@-moz-keyframes fadein {
+  /* Firefox */
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
-@-webkit-keyframes fadein { /* Safari and Chrome */
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
-@-o-keyframes fadein { /* Opera */
+@-o-keyframes fadein {
+  /* Opera */
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }

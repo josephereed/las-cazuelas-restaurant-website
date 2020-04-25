@@ -4,11 +4,12 @@ import cheese from '../images/chees.jpg';
 import burrito from '../images/burrito.jpg';
 import edited2 from '../images/edit.jpg';
 import styled from 'styled-components';
-import { generateMedia } from 'styled-media-query';
+import { Link } from 'react-router-dom'
+// import { generateMedia } from 'styled-media-query';
 
 const Body = () => {
   return (
-    <bodyContainer className="body" id="test">
+    <BodyContainer className="body" id="test">
       <div style={{ width: '100%', overflow: 'hidden' }}>
         <div
           className="content-image-container"
@@ -139,6 +140,7 @@ const Body = () => {
           style={{ width: '400px', float: 'left', marginTop: '25%' }}
         >
           <h1 className="content-header">Our menu</h1>
+          <Link to="/menu">
           <button
             type="button"
             className="btn btn-primary btn-lg"
@@ -146,6 +148,7 @@ const Body = () => {
           >
             View
           </button>
+          </Link>
         </div>
         <div
           className="content-image-container"
@@ -154,16 +157,16 @@ const Body = () => {
           <img src={cheese} alt="homeImage" width="100%" height="100%" />
         </div>
       </div>
-    </bodyContainer>
+    </BodyContainer>
   );
 };
 
 export default Body;
 
-// Media
+// // Media
 
-const customMedia = generateMedia({
-  tablet: '990px'
-});
+// const customMedia = generateMedia({
+//   tablet: '990px'
+// });
 
-const bodyContainer = styled.div``;
+const BodyContainer = styled.div``;

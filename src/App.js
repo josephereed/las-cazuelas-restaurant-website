@@ -6,21 +6,25 @@ import Header from '../src/components/Header';
 import Body from './components/Body';
 import Footer from './components/Footer';
 import About from './components/About';
+import Catering from './components/Catering';
+import About2 from './components/About2';
+import Menu from './components/Menu';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <Router>
+      <Header />
+      <Navbar />
       <Switch>
-        <Router>
-        <Header />
-        <Navbar />
         <Route exact path="/" component={Body} />
         <Route exact path="/about" component={About} />
-        <Footer />
-        </Router>
+        <Route exact path="/catering" component={Catering} />
+        <Route exact path="/about2" component={About2} />
+        <Route exact path="/menu" component={Menu} />
       </Switch>
-    </div>
+      <Footer />
+    </Router>
   );
-}
+};
 
 export default App;
